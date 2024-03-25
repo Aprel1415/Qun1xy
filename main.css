@@ -1,0 +1,68 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    color: inherit;
+}
+
+#menu {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.navButton {
+    line-height: 80px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+.beta {
+    display: block;
+    height: 80px;
+    width: 150px;
+}
+
+#roster {
+    margin-left: 100px;
+}
+
+.beta:hover {
+    transition: 0.2s;
+    background-color: darkred;
+}
+
+.beta:not(hover) {
+    transition: 0.5s;
+}
+
+#q {
+    margin-left: 100px;
+    color: darkred;
+}
