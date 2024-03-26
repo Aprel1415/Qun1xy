@@ -26,7 +26,8 @@ a {
     height: 80px;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    position: absolute;
+    position: fixed;
+    z-index: 2;
 }
 
 #navBar {
@@ -66,3 +67,41 @@ a {
     margin-left: 100px;
     color: darkred;
 }
+
+main {
+    height: 1400px;
+    width: 100%; 
+    background-image: url("images/wallpapert.jpg");
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+#newsBlock {
+    z-index: 1;
+    margin-top: 100px;
+    height: 30%;
+    width: 80%;
+    -webkit-box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.newsShapingClass {
+    z-index: 1;
+    height: 350px;
+    width: 30%;
+    justify-content: center;
+}
+
+.newsShapingClass:not(:last-child) {
+    margin-right: 5%;
+}
+
