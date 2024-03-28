@@ -76,18 +76,17 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
+    display: grid;
 }
 
 #newsBlock {
-    z-index: 1;
     margin-top: 100px;
-    height: 30%;
+    height: 400px;
     width: 80%;
     -webkit-box-sizing: border-box;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-left: 10%;
     padding-left: 5%;
     padding-right: 5%;
     display: flex;
@@ -95,10 +94,8 @@ main {
 }
 
 .newsShapingClass {
-    z-index: 1;
     height: 350px;
     width: 30%;
-    justify-content: center;
     background-color: #000000; 
     clip-path: polygon(80% 0, 95% 10%, 95% 45%, 100% 45%, 100% 100%, 15% 100%, 10% 95%, 10% 60%, 0 60%, 0 0);
 }
@@ -109,23 +106,22 @@ main {
 
 .newsPhoto {
     width: 95%;
-    clip-path: polygon(85% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
 }
 
 .newsHeader {
     margin-left: 60px;
-    color: rgb(255, 255, 255)
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    height: 100px;
 }
 
 .newsData {
     margin-left: 270px;
-    margin-top: 65px;
     color: darkred;
 }
 
 .newsLink {
     height: 100%; 
     width: 100%;
-    display: block;
 }
 
