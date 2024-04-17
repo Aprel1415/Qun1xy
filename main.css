@@ -101,6 +101,22 @@ main {
     background-color: red;
 }
 
+.newsImage {
+    height: 40%;
+    width: 98%;
+    margin: 1%;
+}
+
+.title {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.text {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
 @media only screen and (max-width: 900px) {
     #newsSection {
         grid-template-columns: 1fr 1fr;
