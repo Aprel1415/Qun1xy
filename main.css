@@ -86,7 +86,6 @@ main {
     width: 80%;
     height: 90%;
     margin-left: 10%;
-    background-color: springgreen;
 }
 
 #emptyBlock {
@@ -96,9 +95,9 @@ main {
 
 .newsBlock {
     display: block;
-    height: 700px;
+    height: 600px;
     width: 100%;
-    background-color: red;
+    background-color: darkred;
 }
 
 .newsImage {
@@ -108,13 +107,11 @@ main {
 }
 
 .title {
-    margin-top: 5%;
-    margin-left: 5%;
+    margin: 5% 3% 0 10%;
 }
 
 .text {
-    margin-top: 5%;
-    margin-left: 3%;
+    margin: 5% 3% 0 3%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -129,4 +126,11 @@ main {
         grid-template-columns: 1fr;
         row-gap: 50px;
     }
+}
+
+#footer {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-color: chartreuse;
 }
