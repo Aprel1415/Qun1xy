@@ -132,5 +132,13 @@ main {
     display: block;
     height: 100px;
     width: 100%;
-    background-color: chartreuse;
+    background-image: url('images/snake.jpg');
+}
+
+#author {
+    color: darkred;
+}
+
+#contact {
+    color: darkred;
 }
