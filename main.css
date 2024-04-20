@@ -120,7 +120,7 @@ a {
 .newsBlock:hover {
     transition: 0.2s;
     scale: 1.01;
-    background-color: rgb(116, 204, 255);
+    background-color: rgb(139, 211, 253);
 }
 
 .newsBlock:not(hover) {
