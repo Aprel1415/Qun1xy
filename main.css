@@ -1,3 +1,5 @@
+/* meta info */
+
 * {
     padding: 0px;
     margin: 0px;
@@ -11,6 +13,12 @@
 
 html {
     scroll-behavior: smooth;
+    background-image: url('images/snake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100%;
 }
 
 body {
@@ -22,12 +30,28 @@ a {
     color: inherit;
 }
 
+@media only screen and (max-width: 900px) {
+    #newsSection {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #newsSection {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+}
+
+/* navbar */
+
 #menu {
     height: 80px;
     width: 100%;
     background-color: rgb(0, 0, 0);
     position: fixed;
-    z-index: 3;
+    z-index: 1;
 }
 
 #navBar {
@@ -68,13 +92,11 @@ a {
     color: darkred;
 }
 
-main {
-    background-image: url('images/snake.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
-    background-attachment: fixed;
-    height: 100%;
+/* main section */
+
+#emptyBlock {
+    height: 80px;
+    width: 100%;
 }
 
 #newsSection {
@@ -88,16 +110,21 @@ main {
     margin-left: 10%;
 }
 
-#emptyBlock {
-    height: 80px;
-    width: 100%;
-}
-
 .newsBlock {
     display: block;
     height: 600px;
     width: 100%;
     background-color: darkred;
+}
+
+.newsBlock:hover {
+    transition: 0.2s;
+    scale: 1.01;
+    background-color: rgb(116, 204, 255);
+}
+
+.newsBlock:not(hover) {
+    transition: 0.5s;
 }
 
 .newsImage {
@@ -108,37 +135,30 @@ main {
 
 .title {
     margin: 5% 3% 0 10%;
+    height: min-content;
+    width: 1px;
 }
 
 .text {
     margin: 5% 3% 0 3%;
 }
 
-@media only screen and (max-width: 900px) {
-    #newsSection {
-        grid-template-columns: 1fr 1fr;
-        row-gap: 50px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #newsSection {
-        grid-template-columns: 1fr;
-        row-gap: 50px;
-    }
-}
+/* footer */
 
 #footer {
     display: block;
     height: 100px;
     width: 100%;
-    background-image: url('images/snake.jpg');
 }
 
 #author {
     color: darkred;
+    margin-left: 92%;
+    margin-top: 20px;
 }
 
 #contact {
     color: darkred;
+    margin-left: 92%;
+    margin-top: 20px;
 }
