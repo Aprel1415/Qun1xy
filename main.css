@@ -80,6 +80,7 @@ a {
 
 .beta:hover {
     transition: 0.2s;
+    color: black;
     background-color: darkred;
 }
 
@@ -90,6 +91,18 @@ a {
 #q {
     margin-left: 100px;
     color: darkred;
+}
+
+nav ul li ul {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    margin-top: 80px;
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: initial;
 }
 
 /* main section */
@@ -120,7 +133,8 @@ a {
 .newsBlock:hover {
     transition: 0.2s;
     scale: 1.01;
-    background-color: rgb(139, 211, 253);
+    background-color: black;
+    color: darkred;
 }
 
 .newsBlock:not(hover) {
@@ -152,12 +166,12 @@ a {
 
 #author {
     color: darkred;
-    margin-left: 92%;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: 10%;
 }
 
 #contact {
     color: darkred;
-    margin-left: 92%;
     margin-top: 20px;
+    margin-left: 10%;
 }
