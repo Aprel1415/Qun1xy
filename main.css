@@ -87,15 +87,16 @@ button:focus {
 
 #search {
     display: block;
-    margin-left: 350px;
+    margin-left: 525px;
     margin-top: 23px;
     border: none;
 }
 
 #searchFunc {
-    height: 20px;
+    height: 30px;
     font-size: 12px;
     border: none;
+    border-radius: 20px;
     font-weight: 600;
     overflow: hidden;
     padding: 6px;
