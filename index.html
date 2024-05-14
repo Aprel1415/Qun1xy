@@ -24,11 +24,18 @@
                     <li class="navButton" ><a class="beta" href="#">Достижения</a></li>
                     <li class="navButton" ><a class="beta" href="#">Магазин</a></li>
                     <form id="search">
-                        <input id="searchFunc" type="search" placeholder="Найти...">
+                        <input id="searchFunc" type="search" list="searchSuggestions" autocomplete="off" placeholder="Найти...">
                     </form>
                 </ul>
             </nav>
         </div>
+        <datalist id="searchSuggestions">
+            <option value="Aprel"></option>
+            <option value="nah86"></option>
+            <option value="Aie"></option>
+            <option value="flatty7"></option>
+            <option value="norder king"></option>
+        </datalist>
         <!-- Доделать функцию поиска по сайту -->
     </header>
 
@@ -38,7 +45,7 @@
 
         <section id="newsSection">
 
-            <div class="newsBlock">
+            <div  class="newsBlock">
                 <a href="#"><img src="images\lava-red-coloros-stock-4480x2520-362.jpg" alt="news image" class="newsImage"></a>
                 <div class="title"><a href="#">Заголовок</a></div>
                 <div class="text"><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis impedit veniam illum tenetur delectus possimus deleniti sit optio? Non quibusdam accusamus dolor laboriosam reprehenderit pariatur necessitatibus amet nihil saepe perspiciatis?</a></div>

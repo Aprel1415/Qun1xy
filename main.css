@@ -100,6 +100,11 @@ button:focus {
     font-weight: 600;
     overflow: hidden;
     padding: 6px;
+    outline: 0;
+}
+
+.hide {
+    display: none;
 }
 
 #roster {
