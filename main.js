@@ -6,7 +6,7 @@ inputEl.addEventListener('submit', (e) => {
 const search = document.querySelector('#searchFunc');
 search.oninput= function() {
     const value = this.value.trim();
-    const list = document.querySelectorAll('#newsSection .newsBlock')
+    const list = document.querySelectorAll('#newsSection .headerOfText')
     if(value != ''){
         list.forEach(elem => {
             if(elem.innerText.search(value) == -1){
