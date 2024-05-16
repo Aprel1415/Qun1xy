@@ -14,5 +14,6 @@ search.oninput= function() {
             }
         });
     }
+    // Доделать функцию скрытия элементов, таким же образом, через if
     console.log(value);
 }
