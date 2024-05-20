@@ -6,10 +6,11 @@ inputEl.addEventListener('submit', (e) => {
 const search = document.querySelector('#searchFunc');
 search.oninput= function() {
     const value = this.value.trim();
-    const list = document.querySelectorAll('#newsSection .headerOfText')
+    const list = document.querySelectorAll('#newsSection .newsBlock')
     if(value != ''){
         list.forEach(elem => {
             if(elem.innerText.search(value) == -1){
+                elem.classList.remove('newsBlock')
                 elem.classList.add('hide')
             }
         });
