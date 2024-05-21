@@ -3,18 +3,19 @@ inputEl.addEventListener('submit', (e) => {
     e.preventDefault();
 })
 
-const search = document.querySelector('#searchFunc');
-search.oninput= function() {
-    const value = this.value.trim();
-    const list = document.querySelectorAll('#newsSection .newsBlock')
-    if(value != ''){
-        list.forEach(elem => {
-            if(elem.innerText.search(value) == -1){
-                elem.classList.remove('newsBlock')
-                elem.classList.add('hide')
-            }
-        });
+const searchInput = document.querySelector('#searchFunc');
+
+searchInput.oninput = function() {
+  const value = this.value.trim();
+  const list = document.querySelectorAll('#newsSection .newsBlock');
+
+  list.forEach(element => {
+    if (element.innerText.search(value) === -1) {
+        element.classList.add('hide');
+    } else {
+        element.classList.remove('hide');
     }
-    // Доделать функцию скрытия элементов, таким же образом, через if
-    console.log(value);
-}
+  });
+};
+
+
