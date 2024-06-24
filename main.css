@@ -114,7 +114,7 @@ button:focus {
 .beta:hover {
     transition: 0.2s;
     color: black;
-    background-color: darkred;
+    background-color: rgb(78, 0, 88);
 }
 
 .beta:not(hover) {
@@ -123,7 +123,7 @@ button:focus {
 
 #q {
     margin-left: 100px;
-    color: darkred;
+    color:rgb(78, 0, 88);
 }
 
 nav ul li ul {
@@ -159,7 +159,7 @@ nav ul li:hover > ul {
 .newsBlock {
     height: 600px;
     width: 100%;
-    background-color: darkred;
+    background-color: rgb(78, 0, 88);
 }
 
  
@@ -197,13 +197,13 @@ nav ul li:hover > ul {
 }
 
 #author {
-    color: darkred;
+    color: rgb(78, 0, 88);
     margin-top: 50px;
     margin-left: 10%;
 }
 
 #contact {
-    color: darkred;
+    color: rgb(78, 0, 88);
     margin-top: 20px;
     margin-left: 10%;
 }
