@@ -17,3 +17,4 @@ searchInput.oninput = function() {
     }
   });
 };
+
