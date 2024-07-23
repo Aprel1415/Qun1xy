@@ -219,29 +219,3 @@ nav ul li:hover > ul {
     border-radius: 20px;
     border: none;
 }
-
-#chatHistory {
-    height: 365px;
-
-}
-
-#inputBlock{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#input {
-    border-radius: 20px 0px 0px 20px;
-    height: 25px;
-    width: 300px;
-}
-
-#chat {
-    border-radius: 20px;
-    background-color:rgb(0, 0, 0);
-    opacity: 50%;
-    height: 390px;
-    width: 400px;
-    margin-left: 80px;
-    margin-bottom: 100px;
-}
