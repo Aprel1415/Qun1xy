@@ -103,6 +103,10 @@ button:focus {
     outline: 0;
 }
 
+#searchFunc::placeholder {
+    color: purple;
+}
+
 .hide {
     display: none;
 }
