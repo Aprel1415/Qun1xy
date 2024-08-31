@@ -121,6 +121,19 @@ button:focus {
     background-color: rgb(78, 0, 88);
 }
 
+#reg {
+    margin-top: 20px;
+    margin-left: 150px;
+    width: 105px;
+    height: 40px;
+    border-radius: 60px;
+    padding: 5px;
+    border-color: transparent;
+    background-color: purple;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .beta:not(hover) {
     transition: 0.5s;
 }
