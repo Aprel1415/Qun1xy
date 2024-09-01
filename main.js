@@ -22,4 +22,10 @@ let regButton = document.querySelector('#reg');
 regButton.onclick = function(){
   let greet = prompt("Привет! Как тебя зовут?");
   regButton.innerHTML = greet;
+  if (greet === null) {
+    let registration = "Регистрация";
+    regButton.innerHTML = registration;
+  }
 }
+
+
