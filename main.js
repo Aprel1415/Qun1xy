@@ -21,14 +21,12 @@ searchInput.oninput = function() {
 let regButton = document.querySelector('#reg');
 regButton.onclick = function(){
   let greet = prompt("Привет! Как тебя зовут?");
-  if (greet === null) {
-    let registration = "Регистрация";
-    regButton.innerHTML = registration;
-  }
   if (greet != null) {
-    let password = prompt("Entere ur login!")
-    if (password != 12) {
+    let password = prompt("Entere ur password!")
+    let wpassword = prompt("Repeat ur password!")
+    if (wpassword != password) {
       console.log("error!")
+      regButton.innerHTML = "Регистрация";
     } else {
       regButton.innerHTML = greet;
     }
