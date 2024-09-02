@@ -18,8 +18,6 @@ searchInput.oninput = function() {
   });
 };
 
-var alfa;
-
 let regButton = document.querySelector('#reg');
 regButton.onclick = function(){
   let greet = prompt("Привет! Как тебя зовут?");
@@ -36,4 +34,3 @@ regButton.onclick = function(){
     }
   }
 }
-
