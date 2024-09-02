@@ -18,14 +18,22 @@ searchInput.oninput = function() {
   });
 };
 
+var alfa;
+
 let regButton = document.querySelector('#reg');
 regButton.onclick = function(){
   let greet = prompt("Привет! Как тебя зовут?");
-  regButton.innerHTML = greet;
   if (greet === null) {
     let registration = "Регистрация";
     regButton.innerHTML = registration;
   }
+  if (greet != null) {
+    let password = prompt("Entere ur login!")
+    if (password != 12) {
+      console.log("error!")
+    } else {
+      regButton.innerHTML = greet;
+    }
+  }
 }
-
 
